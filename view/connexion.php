@@ -8,11 +8,13 @@
 </head>
 <body>
     <header>
+        <h1>header</h1>
         <!-- require du footer -->
     </header>
     <main>
+        <h1>Connexion</h1>
         <!-- formulaire de connexion -->
-         <form action="">
+         <form action=""method="POST">
              <div>
                  <label for="login">Votre login </label>
                  <input type="text"name="login">
@@ -33,6 +35,7 @@
 
     </main>
     <footer>
+        <h1>footer</h1>
         <!-- require du footer -->
     </footer>
     
