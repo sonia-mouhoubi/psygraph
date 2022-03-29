@@ -18,7 +18,7 @@
     ?>
     <main>
         <div class="slick-slider">
-            <?php for ($d = 0; $d < 30; $d++) { ?>
+            <?php for ($d = 0; $d < 365; $d++) { ?>
                 <?php
                 $dwl = strftime("%A", strtotime("+" . $d . "days"));
                 $dwn = strftime("%d", strtotime("+" . $d . "days"));
@@ -55,6 +55,18 @@
                             $monthl = 'Mai';
                         } elseif ($monthl == 'June') {
                             $monthl = 'Juin';
+                        } elseif ($monthl == 'July') {
+                            $monthl = 'Juillet';
+                        } elseif ($monthl == 'August') {
+                            $monthl = 'Aôut';
+                        } elseif ($monthl == 'September') {
+                            $monthl = 'Septembre';
+                        } elseif ($monthl == 'October') {
+                            $monthl = 'Octobre';
+                        } elseif ($monthl == 'November') {
+                            $monthl = 'Novembre';
+                        } elseif ($monthl == 'December') {
+                            $monthl = 'Decembre';
                         }
 
 
@@ -91,7 +103,8 @@
 
                             ?>
 
-                            <!-- <button type="submit" class="btn-view indispo"><?= $hmo ?></button> -->
+                            <button type="submit" class="btn-view indispo"><?= $hmo ?></button>
+                            <div class="container-hours"></div>
 
                         <?php } ?>
                     </div>
