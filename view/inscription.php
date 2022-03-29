@@ -5,96 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!-- <script src="../assets/js/script.js"></script> -->
 </head>
 <body>
-    <header>
-        <h1>header</h1>
-
-    </header>
-    <main>
-        <h1>Page Inscription</h1>
-        <form action=""method="POST">
-            <fieldset>
-                <legend>Votre identité</legend>
-                <div>
-                    <label for="statu">patient ou entreprise</label>
-                    <select id="pet-select">
-                        <option value="">entreprise ou particulier</option>
-                        <option value="entrepris">entreprise</option>
-                        <option value="particulier">patient</option>
-                        
-</select>
-
-                    
-                    
-
-                </div>
-            <div>
-                <label for="prenom">Votre prenom</label>
+    <?php require('require/header.php'); ?>
+    <main class="main_inscription">
+        <h1>Inscription</h1>
+        <div>
+            <form action=""method="POST">
+                
+                <label for="statu">Patient ou entreprise</label>
+                <select id="pet-select">
+                    <option value="">Choisir un réponse</option>
+                    <option value="entrepris">entreprise</option>
+                    <option value="particulier">patient</option>
+                </select>
+                <label for="prenom">Votre prénom</label>
                 <input type="text" name="prenom" id="prenom">
 
-            </div>
-            <div>
                 <label for="non">Votre nom</label>
                 <input type="text" name="non" id="nom">
-
-            </div>
-            <div>
-                <label for="adresse">Votre adresse email </label>
-                <input type="text"name="adresse"id="adresse">
-                <div>
-                    <label for="telephone">Votre telephone</label>
-                    <input type="text"name="telephone"id="telephone">
-
-                </div>
-                <div>
-                    <label for="">Votre code postal</label>
-                    <input type="text" name="codepostal" id="codepostal">
-                </div>
-                <div>
-                    <label for="pays">Votre pays</label>
-                    <input type="text" name="pays" id="pays">
-                </div>
-                </fieldset>
-
-            
-            <div>
-                
-
-            </div>
-            <fieldset>
-                <legend>Vos identifiant de connexion</legend>
-
-           
-            <div>
+    
                 <label for="login">Votre login</label>
                 <input type="text" name="login" id="login">
 
-            </div>
-            <div>
-                <label for="login1">Confirmer votre login</label>
-                <input type="text" name="login1" id="logi">
-
-            </div>
-            <div>
-                <label for="password">votre password</label>
+                <label for="password">Votre mot de passe</label>
                 <input type="password" name="password" id="password">
 
-            </div>
-            <div>
-                <label for="password1">Confirmer votre password</label>
+                <label for="password1">Confirmer votre mot de passe</label>
                 <input type="password" name="password1" id="password1">
 
-            </div>
-             </fieldset>
-             <input type="submit" value="inscrivez vous">
+                <input class="btn1" type="submit" value="Inscrivez vous">
+            </form>
 
+            <img src="../assets/img/arbre.png" alt="">
 
+            <form class='formInscription' action="connexion.php" method="post">
+                <label for="">Email</label>
+                <input type="text">
 
+                <label for="">Mot de passe</label>
+                <input type="password">
 
-
-
-        </form>
+                <input id="btn2" type="submit" value='Connexion'>
+            </form>
+        </div>
 
     </main>
     <footer>
