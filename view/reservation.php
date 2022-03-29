@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="../assets/styles/styles.css">
     <link rel="stylesheet" href="../assets/styles/reservation.css">
     <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/script.js"></script>
     <script src="../assets/js/slick.js"></script>
     <script src="../assets/js/window-width.js"></script>
     <script src="../assets/js/slick-slide-file.js"></script>
@@ -16,7 +17,7 @@
 
 <body>
     <?php require_once('require/header.php'); ?>
-    <main>
+    <main class="reservation">
         <div class="slick-slider">
             <?php for ($d = 0; $d < 365; $d++) { ?>
                 <?php
@@ -103,7 +104,7 @@
 
                             ?>
 
-                            <button type="submit" class="btn-view indispo"><?= $hmo ?></button>
+                            <button type="submit" class="btn-view indispo"><?= $hmo . ":00" ?></button>
                             <div class="container-hours"></div>
 
                         <?php } ?>
