@@ -43,6 +43,20 @@
                             $dwl = 'Vendredi';
                         }
 
+                        if ($monthl == 'January') {
+                            $monthl = 'Janvier';
+                        } elseif ($monthl == 'February') {
+                            $monthl = 'Février';
+                        } elseif ($monthl == 'March') {
+                            $monthl = 'Mars';
+                        } elseif ($monthl == 'April') {
+                            $monthl = 'Avril';
+                        } elseif ($monthl == 'May') {
+                            $monthl = 'Mai';
+                        } elseif ($monthl == 'June') {
+                            $monthl = 'Juin';
+                        }
+
 
                         $dwl = substr($dwl, 0, 3);
                         ?>
