@@ -32,15 +32,7 @@
                 <input type="submit" value="Devis">
             </div>
         </form>
-
-      
-
-
-
-
-
-
-
     </main>
+</body>
         
         
