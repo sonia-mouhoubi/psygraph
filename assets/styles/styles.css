@@ -33,35 +33,43 @@ a {
 img {
     max-width: 100%;
 }
+p {
+    margin : 1rem;
+}
 /******************************************** HEADER *******************************/
 header {
     background-image: linear-gradient(rgba(232, 236, 238, 0.9), rgba(255, 254, 247, 0.9)),url(../../assets/img/header.jpg);
     color : #9d9d9d;
     height: 50vh;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 header h1 {
     font-size: 3rem;
+    margin-bottom: 1rem;
 }
 header h2 {
     font-size: 2rem;
+}
+h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding : 2rem;
 }
 header p {
     font-size: 1.5rem;
 }
 header h1, header h2 {
-    flex-basis: 100%;
     text-align: center;
     font-family: 'Kaushan Script', cursive;
 }
 nav {
     display: flex;
     background-color: whitesmoke;
-    width: 100vw;
+    width: 100%;
+    border-bottom: 1px solid #d9e1e7;
 }
 nav li {
     margin: auto;
@@ -76,3 +84,32 @@ nav span {
     margin: 2px auto;
     width: auto;
 }
+
+/******************************************** ANIMATION EN JS *******************************/
+header.scroll {
+    height: 0px;
+    transition: height 250ms ease-in-out 0s, margin-top 350ms ease-in-out 0s;
+}
+nav.scroll {
+    position: fixed;
+    top: 0;
+    transition: top 1s linear;
+    z-index: 100;
+    background-color: #f2fcfb;
+}
+/******************************************** FIN ANIMATION EN JS *******************************/
+/******************************************** FOOTER *******************************/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #2cb9ac;
+}
+footer a {
+    margin : 2rem;
+}
+
+/******************************************** MAIN *******************************/
+main 
+
+
+

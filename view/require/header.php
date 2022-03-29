@@ -7,7 +7,6 @@
     </label>
     <h1>Stéphanie Ledemé</h1>
     <h2>Psyco-Graphologue</h2>
-    <p>Positiver en toute objectivité</p>
 </header>
 <nav>
     <span class="logo"><a href="accueil.php"><img src="../assets/img/logo.png" alt="Logo Psygraph"></a></span>
@@ -15,7 +14,7 @@
         <li><a href="reservation.php">Réservation</a></li>
         <li><a href="contact.php">Contact</a></li>
         <li><a href="inscription.php">Inscription</a></li>
-        <li> <a href="profil.php">Profil</a></li>
+        <li><a href="profil.php">Profil</a></li>
         <li><a href="admin.php">Admin</a></li>
     </ul>
 </nav>
