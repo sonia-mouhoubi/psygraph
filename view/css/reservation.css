@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: max-content;
+}
+
+/* body {
+
+} */
+
+main {
+    margin: auto;
+    width: 98%;
+}
+
+.slick-slider {
+    width: 100%;
+    height: 10vh;
+}
+
+.slick-slider .slick-list, .slick-slider .slick-track {
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
+.slick-list, .slick-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slick-track {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 20vh;
+}
+
+.slick-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 20%;
+}
+
+.container-day {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.slick-prev {
+    position: absolute;
+    top: 3vh;
+    left: 1vh;
+    z-index: 10;
+}
+
+.slick-next {
+    position: absolute;
+    top: 3vh;
+    right: 1vh;
+    z-index: 10;
+}
