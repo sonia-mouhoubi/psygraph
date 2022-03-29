@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style//style.css">
     <title>page contacte</title>
 </head>
 <body>
@@ -11,31 +12,36 @@
 
     </header>
     <main>
-        <div>
-            <label for="">Prenom et Nom</label>
-            <input type="text" name="prenom" id="prenom">
-        
+    <h1>page Contacte</h1>
 
-        </div>
-        <label for="">Email</label>
-        <input type="email" name="" id="">
-        <div>
-            <label for="sujet ">Sujet de votre message</label>
-            <input type="text" name="sujet" id="sujet">
+        <section>
+            
+            <div class="formee">
+                <label for="">prénon et Nom</label>
+                <input type="text">
+                <label for="">Email</label>
+                <input type="text">
+               
+            </div>
+            <div class="forme">
+                <label for="">Sujet</label>
+                <input type="text">
+                <label for="">Votre message</label>
+                <input type="text">
+            </div>
 
-        </div>
-        <div>
-            <label for="message"> votre message</label>
-            <input type="text" name="text" id="text">
-        </div>
+
+
+
+
+        </section>
+
+
+
+
+
 
 
     </main>
-
         
-    <footer>
-
-    </footer>
-    
-</body>
-</html>
+        

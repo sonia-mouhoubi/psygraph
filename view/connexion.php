@@ -14,7 +14,7 @@
     <main>
         <h1>Connexion</h1>
         <!-- formulaire de connexion -->
-         <form action=""method="POST">
+         <form action="profil.php"method="POST">
              <div>
                  <label for="login">Votre login </label>
                  <input type="text"name="login">
