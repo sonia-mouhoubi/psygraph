@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>connexion</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!-- <script src="../assets/js/script.js"></script> -->
+    <title>Connexion</title>
 </head>
 <body>
-    <header>
-        <h1>header</h1>
-        <!-- require du footer -->
-    </header>
-    <main>
+    <?php require('require/header.php') ;?>
+    <main class="main_connexion">
         <h1>Connexion</h1>
         <!-- formulaire de connexion -->
          <form action="profil.php"method="POST">
@@ -25,14 +24,7 @@
 
              </div>
              <input type="submit" value="Connexion">
-             
-
-
-
-
          </form>
-
-
     </main>
     <footer>
         <h1>footer</h1>
