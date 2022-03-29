@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reservation.css">
-    <script src="./js/jquery-3.6.0.js"></script>
-    <script src="./js/slick.js"></script>
-    <script src="./js/window-width.js"></script>
-    <script src="./js/slick-slide-file.js"></script>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <link rel="stylesheet" href="../assets/styles/reservation.css">
+    <script src="../assets/js/jquery-3.6.0.js"></script>
+    <script src="../assets/js/slick.js"></script>
+    <script src="../assets/js/window-width.js"></script>
+    <script src="../assets/js/slick-slide-file.js"></script>
     <title>PsyGraph - Réservation</title>
 </head>
 
 <body>
-    <?php //header('Location: require/header.php'); 
-    ?>
+    <?php require_once('require/header.php'); ?>
     <main>
         <div class="slick-slider">
             <?php for ($d = 0; $d < 365; $d++) { ?>
