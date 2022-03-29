@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style//style.css">
-    <title>page contacte</title>
+    <link rel="stylesheet" href="../assets/styles/styles.css">
+    <!-- <script src="../assets/js/script.js"></script> -->
+    <title>Page contact</title>
 </head>
 <body>
-    <header>
+    <?php require('require/header.php') ;?>
+    <main class="main_contact">
+        <h1>Contact</h1>
+        <img src="../assets/img/logo.png" alt="Logo">
+        
 
-    </header>
-    <main>
-    <h1>page Contacte</h1>
+        <form action="" method="post">
+            <div>
+                <label for="prenom">Nom et prénom</label>
+                <input type="text">
 
-        <section>
-            
-            <div class="formee">
-                <label for="">prénon et Nom</label>
-                <input type="text">
-                <label for="">Email</label>
-                <input type="text">
-               
-            </div>
-            <div class="forme">
+                <label for="">E-mail</label>
+                <input type="email">
+
                 <label for="">Sujet</label>
                 <input type="text">
-                <label for="">Votre message</label>
-                <input type="text">
             </div>
+            <div>
+                <label for="">Message</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+                <input type="submit" value="Devis">
+            </div>
+        </form>
 
-
-
-
-
-        </section>
+      
 
 
 
