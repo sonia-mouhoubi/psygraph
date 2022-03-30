@@ -7,11 +7,15 @@
 html,body {
     width: 100%;
 }
+@font-face {
+    font-family: "Golos";  
+    src: url("../font/Golos-Text_Regular.woff");
+}
 body {
     scroll-behavior: smooth;
-    line-height: 1.15;
+    line-height: 1.8;
 	margin : 0;
-    font-family: ;    
+    font-family: "Golos";
     font-size: 1em;
 }
 ul {
@@ -28,7 +32,7 @@ li {
 a {
 	text-decoration : none;
 	font-weight : bold;
-    color: rgb(255, 238, 2);
+    color: black;
 }
 img {
     max-width: 100%;
@@ -36,9 +40,20 @@ img {
 p {
     margin : 1rem;
 }
+h1, h2, h3, h4 {
+    font-family: 'Merienda', cursive;
+}
+h2 {
+    padding: 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #2cb9ac;
+}
 /******************************************** HEADER *******************************/
 header {
-    background-image: linear-gradient(rgba(232, 236, 238, 0.9), rgba(255, 254, 247, 0.9)),url(../../assets/img/header.jpg);
+    background-image: linear-gradient(rgba(232, 236, 238, 0.5), rgba(255, 254, 247, 0.5)),url(../../assets/img/psyco-graphologie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color : #9d9d9d;
     height: 50vh;
     display: flex;
@@ -49,25 +64,20 @@ header {
 header h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
+    line-height: 0;
 }
 header h2 {
     font-size: 2rem;
 }
-h3 {
-    font-size: 2rem;
+header h1, header h2 {
     text-align: center;
-    padding : 2rem;
 }
 header p {
     font-size: 1.5rem;
 }
-header h1, header h2 {
-    text-align: center;
-    font-family: 'Kaushan Script', cursive;
-}
 nav {
     display: flex;
-    background-color: whitesmoke;
+    background-color:  #fdfdfd;
     width: 100%;
     border-bottom: 1px solid #d9e1e7;
 }
@@ -95,21 +105,175 @@ nav.scroll {
     top: 0;
     transition: top 1s linear;
     z-index: 100;
-    background-color: #f2fcfb;
+    background-color: #f2f2f2;
+    max-width: 100%;
 }
+
 /******************************************** FIN ANIMATION EN JS *******************************/
 /******************************************** FOOTER *******************************/
 footer {
     display: flex;
     justify-content: center;
-    background-color: #2cb9ac;
+    background-color: #9d9d9d;
 }
-footer a {
+footer a, footer p {
     margin : 2rem;
 }
+footer a img {
+    width: auto;
+    height: 5vh;
+}
 
-/******************************************** MAIN *******************************/
-main 
+
+
+/******************************************** A PROPOS *******************************/
+.a-propos {
+    display: flex;
+    flex-wrap: wrap;
+}
+.a-propos h2 {
+    flex-basis: 100%;
+}
+.a-propos div {
+    width: 50%;
+}
+.a-propos div:nth-child(3) {
+    margin: 4rem auto;
+}
+.a-propos div:nth-child(3) p {
+    width: 90%;
+}
+.a-propos img {
+    /* width: 50%; */
+    /* width: 100px; */
+    height: 100px;
+    object-fit: cover;
+    height: auto;
+    border-radius: 100%;
+}
+.photo-profil {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../assets/svg/a-propos.svg);
+    background-repeat: no-repeat;
+    background-size: 80% 80%;
+    /* width: auto; */
+    height: 100vh;
+}
+.photo-profil img {
+    clip-path:ellipse(33% 50%);
+}
+.a-propos div:nth-child(3) a {
+    background-color: #ffc63e;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    display: block;
+    width: 10vw;
+    margin: auto;
+}
+
+/******************************************** INFOGRAPH *******************************/
+.infograph {
+    position: relative;
+    background-image: url(../../assets/svg/infograph.svg);
+    background-repeat: no-repeat;
+    background-color: #dfe5e9;
+    background-position: center;
+    padding: 2rem;
+}
+.infograph div {
+    width: 50%;
+    margin: auto;
+}
+.infograph a {
+    color: #ffc63e;
+    font-weight: bold;
+}
+.infograph img {
+    width: 30%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/******************************************** PSYCHOGRAPHIE *******************************/
+.psychographie {
+  display: flex;  
+  flex-wrap: wrap;
+}
+.psychographie h2 {
+    flex-basis: 100%;
+}
+.psychographie div {
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+}
+.psychographie p {
+    height: max-content; 
+}
+.psychographie img {
+    width: 50%;
+    margin: auto;
+}
+
+/******************************************** METHODES *******************************/
+.methodes {
+    background-color: #dfe5e9;
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.methodes h2 {
+    flex-basis: 100%;
+}
+.methodes div {
+    width: 50%;
+    margin: auto;
+}
+.methodes div:last-child {
+    text-align: center;
+}
+.methodes iframe {
+    width: 70%;
+    height: auto;
+    margin-left: 3rem;
+}
+/******************************************** PRESENTATION *******************************/
+.prestation {
+    padding: 2rem 0;
+}
+.prestation div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+.prestation h2 {
+    flex-basis: 100%;
+}
+.prestation p {
+    width: 17vw;
+    height: 25vh;
+    background-color: #dfe5e9;
+    border-radius: 5px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.prestation a:last-child {
+    background-color: #ffc63e;
+    padding: 0.5rem 1rem;
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    width: 15vw;
+    margin: auto;
+}
+
 
 
 
