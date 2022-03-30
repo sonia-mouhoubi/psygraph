@@ -162,3 +162,128 @@ footer a {
   border-radius: 10px;
   border: none;
 }
+
+/******************************************** CONTACT *******************************/
+.main_contact {
+  background-color: #d1d1d1;
+}
+
+.main_contact h1 {
+  padding-top: 3%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: #9d9d9d;
+}
+.main_contact img {
+  width: 15%;
+  margin-left: 80%;
+}
+
+.main_contact form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10%;
+}
+.main_contact form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  width: 40%;
+}
+
+.main_contact form div:nth-child(2) {
+  width: 30%;
+}
+
+.main_contact label {
+  margin-bottom: 2%;
+  font-size: 20px;
+  color: #9d9d9d;
+  font-weight: bold;
+}
+.main_contact input {
+  height: 7vh;
+  width: 80%;
+  margin-bottom: 5%;
+  border: none;
+}
+
+.main_contact textarea {
+  width: 100%;
+  border: none;
+}
+
+.main_contact form div input[type="submit"] {
+  width: 30%;
+  height: 6vh;
+  margin: 3% auto 0;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/******************************************** INSCRIPTION *******************************/
+.main_inscription h1 {
+  padding-top: 3%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: #9d9d9d;
+}
+
+.main_inscription div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main_inscription div form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1%;
+}
+
+.main_inscription label {
+  margin: 2% 0;
+  font-size: 20px;
+  color: rgb(255, 238, 2);
+}
+
+.main_inscription input,
+.main_inscription select {
+  height: 5vh;
+}
+.main_inscription input[type="submit"] {
+  width: 30%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 2% auto;
+  height: 5vh;
+}
+
+.formInscription {
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: whitesmoke;
+  border-radius: 20px 0 0 20px;
+}
+
+.formInscription input {
+  width: 70%;
+}
+
+.btn1 {
+  background-color: whitesmoke;
+}
+
+#btn2 {
+  background-color: white;
+  width: 30%;
+  margin-top: 10%;
+}
+
+.main_inscription img {
+  width: 20%;
+}
