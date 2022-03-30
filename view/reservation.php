@@ -12,6 +12,7 @@
     <script src="../assets/js/slick.js"></script>
     <script src="../assets/js/window-width.js"></script>
     <script src="../assets/js/slick-slide-file.js"></script>
+    <script src="../assets/js/pop-up-connect"></script>
     <title>PsyGraph - Réservation</title>
 </head>
 
@@ -79,9 +80,6 @@
                         
                         <div class="container-day">
                             <h4 class="titleday"><?php echo $dwl . ' ' . $dwn . ' ' . $monthl . ' ' . $year ?></h4>
-                            <!-- <h4 class="titleday"><?php echo $dwl ?></h4>
-                            <h4 class="titleday"><?php echo $dwn ?></h4>
-                            <h4 class="titleday"><?php echo $monthl ?></h4> -->
                         </div>
 
                         <?php
@@ -104,8 +102,7 @@
 
                             ?>
 
-                            <button type="submit" class="btn-view indispo"><?= $hmo . ":00" ?></button>
-                            <div class="container-hours"></div>
+                            <button type="submit" class="btn-view "><?= $hmo . ":00" ?></button>
 
                         <?php } ?>
                     </div>
@@ -113,8 +110,7 @@
             <?php } ?>
         </div>
     </main>
-    <?php //header('Location: require/header.php'); 
-    ?>
+    <?php require_once('require/footer.php'); ?>
 </body>
 
 </html>
