@@ -1,279 +1,462 @@
 /************************************ CSS de BASE *******************************/
 * {
-	box-sizing : border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-html,body {
-    width: 100%;
+html,
+body {
+  width: 100%;
 }
 @font-face {
-    font-family: "Golos";  
-    src: url("../font/Golos-Text_Regular.woff");
+  font-family: "Golos";
+  src: url("../font/Golos-Text_Regular.woff");
 }
 body {
-    scroll-behavior: smooth;
-    line-height: 1.8;
-	margin : 0;
-    font-family: "Golos";
-    font-size: 1em;
+  scroll-behavior: smooth;
+  line-height: 1.8;
+  margin: 0;
+  font-family: "Golos";
+  font-size: 1em;
 }
 ul {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 10vh;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
 }
 li {
-    list-style: none;
-    margin : 1rem 1rem;
+  list-style: none;
+  margin: 1rem 1rem;
 }
 a {
-	text-decoration : none;
-	font-weight : bold;
-    color: black;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
 }
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 p {
-    margin : 1rem;
+  margin: 1rem;
 }
-h1, h2, h3, h4 {
-    font-family: 'Merienda', cursive;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Merienda", cursive;
 }
 h2 {
-    padding: 2rem;
-    text-align: center;
-    font-size: 2rem;
-    color: #2cb9ac;
+  padding: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #2cb9ac;
 }
 /******************************************** HEADER *******************************/
 header {
-    background-image: linear-gradient(rgba(232, 236, 238, 0.5), rgba(255, 254, 247, 0.5)),url(../../assets/img/psyco-graphologie.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color : #9d9d9d;
-    height: 50vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  background-image: linear-gradient(
+      rgba(232, 236, 238, 0.5),
+      rgba(255, 254, 247, 0.5)
+    ),
+    url(../../assets/img/psyco-graphologie.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #9d9d9d;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 header h1 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    line-height: 0;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  line-height: 0;
 }
 header h2 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-header h1, header h2 {
-    text-align: center;
+header h1,
+header h2 {
+  text-align: center;
+}
+h3 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 2rem;
 }
 header p {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 nav {
-    display: flex;
-    background-color:  #fdfdfd;
-    width: 100%;
-    border-bottom: 1px solid #d9e1e7;
+  display: flex;
+  background-color: #fdfdfd;
+  width: 100%;
+  border-bottom: 1px solid #d9e1e7;
 }
 nav li {
-    margin: auto;
+  margin: auto;
 }
 nav span {
-    width: 20vw;
+  width: 20vw;
 }
 .logo img {
-    height: 10vh;
-    width: auto;
-    display: block;
-    margin: 2px auto;
-    width: auto;
+  height: 10vh;
+  width: auto;
+  display: block;
+  margin: 2px auto;
+  width: auto;
 }
 
 /******************************************** ANIMATION EN JS *******************************/
 header.scroll {
-    height: 0px;
-    transition: height 250ms ease-in-out 0s, margin-top 350ms ease-in-out 0s;
+  height: 0px;
+  transition: height 250ms ease-in-out 0s, margin-top 350ms ease-in-out 0s;
 }
 nav.scroll {
-    position: fixed;
-    top: 0;
-    transition: top 1s linear;
-    z-index: 100;
-    background-color: #f2f2f2;
-    max-width: 100%;
+  position: fixed;
+  top: 0;
+  transition: top 1s linear;
+  z-index: 100;
+  background-color: #f2f2f2;
+  max-width: 100%;
 }
 
 /******************************************** FIN ANIMATION EN JS *******************************/
 /******************************************** FOOTER *******************************/
 footer {
-    display: flex;
-    justify-content: center;
-    background-color: #9d9d9d;
+  display: flex;
+  justify-content: center;
+  background-color: #9d9d9d;
 }
-footer a, footer p {
-    margin : 2rem;
+footer a,
+footer p {
+  margin: 2rem;
 }
 footer a img {
-    width: auto;
-    height: 5vh;
+  width: auto;
+  height: 5vh;
 }
-
-
 
 /******************************************** A PROPOS *******************************/
 .a-propos {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .a-propos h2 {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 .a-propos div {
-    width: 50%;
+  width: 50%;
 }
 .a-propos div:nth-child(3) {
-    margin: 4rem auto;
+  margin: 4rem auto;
 }
 .a-propos div:nth-child(3) p {
-    width: 90%;
+  width: 90%;
 }
 .a-propos img {
-    /* width: 50%; */
-    /* width: 100px; */
-    height: 100px;
-    object-fit: cover;
-    height: auto;
-    border-radius: 100%;
+  /* width: 50%; */
+  /* width: 100px; */
+  height: 100px;
+  object-fit: cover;
+  height: auto;
+  border-radius: 100%;
 }
 .photo-profil {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(../../assets/svg/a-propos.svg);
-    background-repeat: no-repeat;
-    background-size: 80% 80%;
-    /* width: auto; */
-    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../../assets/svg/a-propos.svg);
+  background-repeat: no-repeat;
+  background-size: 80% 80%;
+  /* width: auto; */
+  height: 100vh;
 }
 .photo-profil img {
-    clip-path:ellipse(33% 50%);
+  clip-path: ellipse(33% 50%);
 }
 .a-propos div:nth-child(3) a {
-    background-color: #ffc63e;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    display: block;
-    width: 10vw;
-    margin: auto;
+  background-color: #ffc63e;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: block;
+  width: 10vw;
+  margin: auto;
 }
 
 /******************************************** INFOGRAPH *******************************/
 .infograph {
-    position: relative;
-    background-image: url(../../assets/svg/infograph.svg);
-    background-repeat: no-repeat;
-    background-color: #dfe5e9;
-    background-position: center;
-    padding: 2rem;
+  position: relative;
+  background-image: url(../../assets/svg/infograph.svg);
+  background-repeat: no-repeat;
+  background-color: #dfe5e9;
+  background-position: center;
+  padding: 2rem;
 }
 .infograph div {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 .infograph a {
-    color: #ffc63e;
-    font-weight: bold;
+  color: #ffc63e;
+  font-weight: bold;
 }
 .infograph img {
-    width: 30%;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+  width: 30%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
 
 /******************************************** PSYCHOGRAPHIE *******************************/
 .psychographie {
-  display: flex;  
+  display: flex;
   flex-wrap: wrap;
 }
 .psychographie h2 {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 .psychographie div {
-    width: 50%;
-    margin: auto;
-    padding: 2rem;
+  width: 50%;
+  margin: auto;
+  padding: 2rem;
 }
 .psychographie p {
-    height: max-content; 
+  height: max-content;
 }
 .psychographie img {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 
 /******************************************** METHODES *******************************/
 .methodes {
-    background-color: #dfe5e9;
-    padding: 2rem;
-    display: flex;
-    flex-wrap: wrap;
+  background-color: #dfe5e9;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
 }
 .methodes h2 {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 .methodes div {
-    width: 50%;
-    margin: auto;
+  width: 50%;
+  margin: auto;
 }
 .methodes div:last-child {
-    text-align: center;
+  text-align: center;
 }
 .methodes iframe {
-    width: 70%;
-    height: auto;
-    margin-left: 3rem;
+  width: 70%;
+  height: auto;
+  margin-left: 3rem;
 }
 /******************************************** PRESENTATION *******************************/
 .prestation {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
 .prestation div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-bottom: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 2rem;
 }
 .prestation h2 {
-    flex-basis: 100%;
+  flex-basis: 100%;
 }
 .prestation p {
-    width: 17vw;
-    height: 25vh;
-    background-color: #dfe5e9;
-    border-radius: 5px;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+  width: 17vw;
+  height: 25vh;
+  background-color: #dfe5e9;
+  border-radius: 5px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 .prestation a:last-child {
-    background-color: #ffc63e;
-    padding: 0.5rem 1rem;
-    border-radius: 25px;
-    display: block;
-    text-align: center;
-    width: 15vw;
-    margin: auto;
+  background-color: #ffc63e;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  display: block;
+  text-align: center;
+  width: 15vw;
+  margin: auto;
 }
 
+/******************************************** MAIN *******************************/
 
+/******************************************** CONNEXION *******************************/
+.main_connexion h1 {
+  margin-top: 3%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: #9d9d9d;
+}
 
+.main_connexion form {
+  width: 50%;
+  margin: 3% auto;
+  padding: 2% 0;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 20px;
+}
+.main_connexion form div {
+  width: 100%;
+  margin-top: 2%;
+}
+.main_connexion form label {
+  color: rgb(255, 238, 2);
+  font-size: 20px;
+  display: block;
+  width: 50%;
+  margin: auto;
+}
+.main_connexion form input {
+  display: block;
+  width: 50%;
+  margin: 1% auto;
+  height: 5vh;
+}
+.main_connexion form input[type="submit"] {
+  display: block;
+  width: 30%;
+  height: 5vh;
+  margin: 4%;
+  background-color: white;
+  color: rgb(255, 238, 2);
+  border-radius: 10px;
+  border: none;
+}
 
+/******************************************** CONTACT *******************************/
+.main_contact {
+  background-color: #d1d1d1;
+}
+
+.main_contact h1 {
+  padding-top: 3%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: #9d9d9d;
+}
+.main_contact img {
+  width: 15%;
+  margin-left: 80%;
+}
+
+.main_contact form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10%;
+}
+.main_contact form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: left;
+  width: 40%;
+}
+
+.main_contact form div:nth-child(2) {
+  width: 30%;
+}
+
+.main_contact label {
+  margin-bottom: 2%;
+  font-size: 20px;
+  color: #9d9d9d;
+  font-weight: bold;
+}
+.main_contact input {
+  height: 7vh;
+  width: 80%;
+  margin-bottom: 5%;
+  border: none;
+}
+
+.main_contact textarea {
+  width: 100%;
+  border: none;
+}
+
+.main_contact form div input[type="submit"] {
+  width: 30%;
+  height: 6vh;
+  margin: 3% auto 0;
+  border-radius: 10px;
+  background-color: white;
+}
+
+/******************************************** INSCRIPTION *******************************/
+.main_inscription h1 {
+  padding-top: 3%;
+  text-align: center;
+  font-family: "Kaushan Script", cursive;
+  color: #9d9d9d;
+}
+
+.main_inscription div {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main_inscription div form {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 1%;
+}
+
+.main_inscription label {
+  margin: 2% 0;
+  font-size: 20px;
+  color: rgb(255, 238, 2);
+}
+
+.main_inscription input,
+.main_inscription select {
+  height: 5vh;
+}
+.main_inscription input[type="submit"] {
+  width: 30%;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  margin: 2% auto;
+  height: 5vh;
+}
+
+.formInscription {
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: whitesmoke;
+  border-radius: 20px 0 0 20px;
+}
+
+.formInscription input {
+  width: 70%;
+}
+
+.btn1 {
+  background-color: whitesmoke;
+}
+
+#btn2 {
+  background-color: white;
+  width: 30%;
+  margin-top: 10%;
+}
+
+.main_inscription img {
+  width: 20%;
+}
