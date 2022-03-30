@@ -12,10 +12,10 @@
     <script src="../assets/js/script.js"></script>
 </head>
 <body>
-    <?php require 'require/header.php'; ?>
+    <?php require 'require/header.php';?>
     <main>
         <section class="a-propos">
-            <h2>Votre psyco-graphologue</h2>
+            <h2>Votre psycho-graphologue</h2>
 
             <div class="photo-profil">            
                 <img src="../assets/img/stephanie-ledeme.jpg" alt="Photo de Stéphanie Ledemé">
@@ -47,12 +47,12 @@
         </section>
 
         <section class="psychographie">
-            <h2>Qu'est ce que la psychographie ?</h2>
+            <h2>Qu'est ce que la psychhographie ?</h2>
 
             <div>
                 <p>La graphologie est une technique d'observation et d'interprétation d'une écriture manuscrite visant à établir le portrait psychologique de son scripteur.</p>
-                <p>L’analyse graphologique est utilisée dans deux optiques :
-                ● à visée personnelle, pour obtenir un portrait psychologique complet, et étudier les compatibilités caractérielles au sein d’un couple par exemple ;
+                <p>L’analyse graphologique est utilisée dans deux optiques :<br>
+                ● à visée personnelle, pour obtenir un portrait psychologique complet, et étudier les compatibilités caractérielles au sein d’un couple par exemple ;<br>
                 ● à but professionnel, lors d’un recrutement, comme approche pour voir si le candidat correspond au poste proposé en fonction des qualités attendues, ou encore pour l’aide à l’orientation professionnelle en décelant les aptitudes et les goûts du demandeur.</p>
                 <p>Il y a encore peu, il fallait être graphologue pour de venir graphothérapeute. Preuveque ces deux professions sont associées et complémentaires.
                 Pourquoi ? Parce que la graphologie est l’analyse de l’écriture et une science de la psychologie. La graphologie est l’étude de la compréhension de l’écriture comme reflet de la personnalité.</p>

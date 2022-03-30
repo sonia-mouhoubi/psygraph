@@ -134,6 +134,12 @@ footer a,
 footer p {
   margin: 2rem;
 }
+footer a {
+  color: rgb(255, 238, 2);
+}
+footer a:first-child {
+    margin-right: 20rem;
+  }
 footer a img {
   width: auto;
   height: 5vh;
@@ -249,8 +255,7 @@ footer a img {
   text-align: center;
 }
 .methodes iframe {
-  width: 70%;
-  height: auto;
+  width: 80%;
   margin-left: 3rem;
 }
 /******************************************** PRESENTATION *******************************/
@@ -286,8 +291,6 @@ footer a img {
   width: 15vw;
   margin: auto;
 }
-
-/******************************************** MAIN *******************************/
 
 /******************************************** CONNEXION *******************************/
 .main_connexion h1 {
@@ -330,16 +333,11 @@ footer a img {
   width: 30%;
   height: 5vh;
   margin: 4%;
-  background-color: white;
-  color: rgb(255, 238, 2);
   border-radius: 10px;
   border: none;
 }
 
 /******************************************** CONTACT *******************************/
-.main_contact {
-  background-color: #d1d1d1;
-}
 
 .main_contact h1 {
   padding-top: 3%;
@@ -357,6 +355,9 @@ footer a img {
   justify-content: flex-start;
   align-items: center;
   margin-left: 10%;
+  background-color: #ebe8e8;
+  padding: 2rem;
+
 }
 .main_contact form div {
   display: flex;
@@ -367,7 +368,7 @@ footer a img {
 }
 
 .main_contact form div:nth-child(2) {
-  width: 30%;
+  width: 50%;
 }
 
 .main_contact label {
@@ -391,9 +392,8 @@ footer a img {
 .main_contact form div input[type="submit"] {
   width: 30%;
   height: 6vh;
-  margin: 3% auto 0;
+  margin: 2rem auto;
   border-radius: 10px;
-  background-color: white;
 }
 
 /******************************************** INSCRIPTION *******************************/
@@ -431,10 +431,16 @@ footer a img {
   width: 30%;
   border: 1px solid lightgray;
   border-radius: 10px;
-  margin: 2% auto;
+  margin: 2rem auto;
   height: 5vh;
 }
+form {
+    margin: 4rem;
+}
+form input[type="submit"] {
+    background-color: #ffc63e;
 
+}
 .formInscription {
   justify-content: center;
   align-items: center;
@@ -452,9 +458,7 @@ footer a img {
 }
 
 #btn2 {
-  background-color: white;
   width: 30%;
-  margin-top: 10%;
 }
 
 .main_inscription img {
